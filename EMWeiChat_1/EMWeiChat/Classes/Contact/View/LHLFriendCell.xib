@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LHLFriendCell" rowHeight="50" id="KGk-i7-Jjw" customClass="LHLFriendCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fpY-03-gom">
+                        <rect key="frame" x="10" y="42" width="310" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="mGY-Ub-1uL"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ukM-Xm-pMg">
+                        <rect key="frame" x="10" y="10" width="30" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="gAE-Zf-qtX"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WlP-M9-JQX">
+                        <rect key="frame" x="50" y="11" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ukM-Xm-pMg" secondAttribute="bottom" constant="10" id="8pl-EM-cFk"/>
+                    <constraint firstAttribute="trailing" secondItem="fpY-03-gom" secondAttribute="trailing" id="B8u-ZR-b0b"/>
+                    <constraint firstItem="ukM-Xm-pMg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="BnQ-Du-CZ3"/>
+                    <constraint firstItem="fpY-03-gom" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="IEl-41-rgr"/>
+                    <constraint firstItem="ukM-Xm-pMg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Lgw-s4-yiK"/>
+                    <constraint firstAttribute="bottom" secondItem="fpY-03-gom" secondAttribute="bottom" id="g3C-P3-dtc"/>
+                    <constraint firstItem="WlP-M9-JQX" firstAttribute="leading" secondItem="ukM-Xm-pMg" secondAttribute="trailing" constant="10" id="hYH-KU-LbI"/>
+                    <constraint firstItem="WlP-M9-JQX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="xeo-DU-nwN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="userIcon" destination="ukM-Xm-pMg" id="wVC-K3-bDK"/>
+                <outlet property="username" destination="WlP-M9-JQX" id="hub-Pd-1qn"/>
+            </connections>
+            <point key="canvasLocation" x="47" y="227"/>
+        </tableViewCell>
+    </objects>
+</document>
